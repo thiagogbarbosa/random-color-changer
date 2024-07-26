@@ -28,5 +28,9 @@ function changeBackgroundColor() {
 
     bgHexCodeSpanElement.innerText = color;
     body.style.backgroundColor = color;
-}
-changeBackgroundColor();
+};
+
+const btn = document.querySelector("#btn");
+
+//Doesnt need the parentesis calling the function on onclick method
+btn.onclick = changeBackgroundColor;
